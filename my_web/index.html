@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Certanus</title>
+    <meta name="description" content="A clean, responsive site with a floating navigation bar." />
+
+    <!-- Favicon (optional) -->
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Preload Hero (optional) -->
+    <link rel="preload" as="image" href="assets/img/hero.jpg" />
+</head>
+<body>
+<!-- Skip link for accessibility  -->
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Header / Floating nav -->
+<header id="top" class="site-header" role="banner" aria-label="Primary">
+    <div class="container header-inner">
+        <a href="#top" class="brand">
+            <img src="assets/img/logo.svg" alt="C" class="logo" />
+            <span class="brand-name">Certanus</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Toggle navigation">
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+            <span class="bar" aria-hidden="true"></span>
+        </button>
+
+        <nav id="primary-nav" class="nav" role="navigation" aria-label="Primary navigation">
+            <ul>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#work" class="nav-link">Work</a></li>
+                <li><a href="#contact" class="nav-link btn btn-small">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero" role="region" aria-label="Hero">
+    <div class="container hero-inner">
+        <h1>Build better, faster.</h1>
+        <p>We design and create accessible ways to feed your cloud data warehouse with control tables.</p>
+        <div class="hero-cta">
+            <a href="#services" class="btn">What we do</a>
+            <a href="#contact" class="btn btn-outline">Get in touch</a>
+        </div>
+    </div>
+    <figure class="hero-media" aria-hidden="true">
+        <img src="assets/img/hero.jpg" alt="" />
+    </figure>
+</section>
+
+<main id="main">
+    <!-- About -->
+    <section id="about" class="section section-alt" aria-labelledby="about-title">
+        <div class="container">
+            <h2 id="about-title">About</h2>
+            <p>Certanus Inc. is a multidisciplinary studio focused on outcomes: strategy, UX/UI, and full-stack engineering delivered through tight collaboration and lean execution</p>
+            <div class="grid-3">
+                <div class="card">
+                    <h3>Principles</h3>
+                    <ul>
+                        <li>Start Simple</li>
+                        <li>Design with data</li>
+                        <li>Own the outcome</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Stack</h3>
+                    <ul>
+                        <li>React, Vue, Svelte</li>
+                        <li>Node, Python, Go</li>
+                        <li>AWS, GCP, Azure</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Impact</h3>
+                    <ul>
+                        <li>+38 conversions</li>
+                        <li>-27 churn</li>
+                        <li>Sub-100ms TTFB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section" aria-labelledby="services-title">
+        <div class="container">
+            <h2 id="services-title">Services</h2>
+            <div class="grid-3">
+                <article class="card">
+                    <h3>Product Strategy</h3>
+                    <p>Roadmaps, experiments, and KPIs aligned to business outcomes.</p>
+                </article>
+                <article class="card">
+                    <h3>Design Systems</h3>
+                    <p>Accessible, scalable components with robust documentation.</p>
+                </article>
+                <article class="card">
+                    <h3>Full-Stack Delivery</h3>
+                    <p>From API to pixel: secure, performant apps ready for scale</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section section-alt" aria-labelledby="work-title">
+        <div class="container">
+            <h2 id="work-title">Work</h2>
+            <div class="work-grid">
+                <figure class="work-item">
+                    <figcaption>
+                        <h3>Fintech Dashboard</h3>
+                        <p>Real-time analytics with role-based access.</p>
+                    </figcaption>
+                </figure>
+                <figure class="work-item">
+                    <figcaption>
+                        <h3>Commerce Revamp</h3>
+                        <p>Headless architecture, +42% AOV.</p>
+                    </figcaption>
+                </figure>
+                <figure class="work-item">
+                    <figcaption>
+                        <h3>Healht App</h3>
+                        <p>HIPPA-friendly flows with offline sync.</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="Contact" class="section" aria-labelledby="contact-title">
+        <div class="container">
+            <h2 id="contact-title">Contact Us</h2>
+            <p>Have a project in mind? send a message and we'll reply within 1 business day.</p>
+
+            <form id="contact-form" novalidate>
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label for="name">First Name</label>
+                        <input type="text" id="name" name="name" autocomplete="name" required />
+                        <small class="error" id="error-name" role="alert"></small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="email">email</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required />
+                        <small class="error" id="error-email" role="alert"></small>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="Subject">Subject</label>
+                        <input type="text" id="Subject" name="Subject" required />
+                        <small class="error" id="error-subject" role="alert"></small>
+                    </div>
+
+                    <div class="form-field form-field-full">
+                        <label for="Message">Message</label>
+                        <textarea id="Message" name="Message" rows="7" required></textarea>
+                        <small class="error" id="error-message" role="alert"></small>
+                    </div>
+
+                    <!-- Math captcha (bottom of form) -->
+                    <div class="form-field">
+                        <label for="captcha">What is <span id="captcha-question">?</span>?</label>
+                        <input type="text" id="captcha" name="captcha" autocomplete="off" required />
+                        <small class="error" id="error-captcha" role="alert"></small>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn" id="submit-btn">Send Message</button>
+                    <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                </div>
+            </form> <!-- action="https://formspree.io/certanus" method="POST"-->
+
+            <div class="contact-meta">
+                <p><strong>Email:</strong>info@certanus.com</p>
+                <p><strong>Office:</strong>Miami, Florida</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; <span id="year"></span>Certanus Inc. All rights reserved.</p>
+        <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
+    </div>
+</footer>
+
+  <!-- JS -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
